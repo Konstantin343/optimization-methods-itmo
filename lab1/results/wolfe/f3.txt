@@ -1,0 +1,5 @@
+argMin = {x1: 1.00021762160534, x2: 1.00052541806969}
+min =  5.54821293392294e-8
+iterations =  584
+functionCalls =  1169
+gradientCalls =  1169
