@@ -3,8 +3,8 @@ import sympy as sp
 import pandas as pd
 from matplotlib import pyplot as plt
 
-from gradientDescent.gradientDescents import *
-from utils.generatorsUtils import generateFunction
+from lab1.gradientDescent.gradientDescents import *
+from lab1.utils.generatorsUtils import generateFunction
 
 
 # region Plots

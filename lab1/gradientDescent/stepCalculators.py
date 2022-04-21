@@ -1,5 +1,5 @@
-from utils.gradientUtils import GradientHelper
-from utils.mathUtils import sub, mul, dot
+from lab1.utils.gradientUtils import GradientHelper
+from lab1.utils.mathUtils import sub, mul, dot
 
 
 class StepCalculator:

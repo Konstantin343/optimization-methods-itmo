@@ -1,9 +1,8 @@
-from gradientDescent.gradientResult import GradientDescentResult
-from gradientDescent.stepCalculators import ConstantStepCalculator, ExponentialStepCalculator, DichotomyStepCalculator, \
-    WolfeConditionsStepCalculator
-from gradientDescent.stopCriteria import ArgumentStopCriteria, IterationsStopCriteria
-from utils.gradientUtils import GradientHelper
-from utils.mathUtils import sub, mul
+from lab1.gradientDescent.gradientResult import GradientDescentResult
+from lab1.gradientDescent.stepCalculators import *
+from lab1.gradientDescent.stopCriteria import ArgumentStopCriteria, IterationsStopCriteria
+from lab1.utils.gradientUtils import GradientHelper
+from lab1.utils.mathUtils import sub, mul
 
 
 class GradientDescent:
@@ -23,7 +22,7 @@ class GradientDescent:
         result.points.append(current)
         while True:
             gradientValues = GradientHelper.gradientValues(gradient, current)
-            result.gradientCalls += 1
+            result.gradientCalls += len(gradientValues)
 
             result.iterations += 1
             step = self.stepCalculator.calculate(result, function, gradientValues)

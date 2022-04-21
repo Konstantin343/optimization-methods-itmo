@@ -1,5 +1,5 @@
 import numpy as np
-from utils.mathUtils import sub
+from lab1.utils.mathUtils import sub
 
 
 class StopCriteria:
